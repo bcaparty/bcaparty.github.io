@@ -1,0 +1,144 @@
+<body id="page-top">
+    <div id="main" class="">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <header id="header">
+
+                <body class="hide-scroll">
+                    <div id="main" class="" ng-controller="scrollController">
+                        <header id="header">
+                            <div class="main-header">
+                                <div class="responsiveMenu">
+                                    <nav class="navbar navbar-inverse navbar-static-top">
+                                        <!--    <div class="container">-->
+                                        <div class="navbar-header page-scroll">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <div id="name"><a class="navbar-brand " href="#">BC Action Party</a></div>
+                                        </div>
+                                        <div id="menu-header" class="container">
+                                            <div id="main-navbar" class="collapse navbar-collapse">
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li><a class="page-scroll" href="#Participate">Join the movement</a></li>
+                                                    <li><a class="page-scroll" href="#Resources">Resources</a></li>
+                                                    <li><a class="page-scroll" href="#About">About</a></li>
+                                                    <li><a class="page-scroll" href="Donation">Donate</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </header>
+        </nav>
+        <!--header section end-->
+        <!--Content area start-->
+
+                    The BC Action Party is committed to building a policy framework that is based on the following nine key values:
+
+Democracy
+We believe that we must all actively foster the institutions and processes that enhance democratic values.  This means that government should create an environment within which British Columbians can play an active and ongoing role in our democracy not just at the polling stations but every day.
+
+Accountability
+We expect governments at all levels to answer to the people for the decisions they have made. Our government must make policies and use public dollars as effectively and efficiently as possible.  The books should be balanced and we must always be ready for a rainy day. This is best accomplished through long-term planning, common sense and transparency.
+
+Responsibility
+Good government is defined by its actions. It functions within its means and its representatives spend public money wisely in the interests of all British Columbians.
+
+A good government must provide excellent and innovative public education, public health care, and infrastructure through responsible use of public funds.
+
+Compassion
+We support a government that displays caring for those in society who need support and that ensures that services are delivered with compassion
+
+Respect
+We believe that all British Columbians are equally valuable, regardless of ability, race, gender, religion, language, marital status and/or sexual orientation.
+
+Entrepreneurship
+We are committed to policies that provide a climate where all British Columbians have the opportunity to succeed through hard work and initiative.  Private enterprise and entrepreneurship are the keys to our economic success and our government must foster an environment which facilitates economic investment, reduces red tape and encourages creativity.
+
+Self-Reliance
+We believe that strong individuals who are given the opportunity to help themselves can be the foundation of a great quality of life within strong and vibrant communities.
+
+Stewardship
+We support sustainability as core value of government.  Sustainable practices supported by strategic investments in research and technology along with smart policy choices will safeguard and enhance our environment for future generations.
+
+Patriotism
+We want all British Columbians to take pride in our cultures, our communities, our province and our country.  What is important is what connects us together and our government must strengthen those bonds.
+                    
+                        <script src="vendor/angular.min.js"></script>
+    <script src="vendor/jquery-2.2.0.js"></script>
+    <script src="vendor/bootstrap.js"></script>
+    <script src="app/app.js"></script>
+    <script src="vendor/jquery.bxslider.min.js"></script>
+    <script src="vendor/smooth-scrollbar.js"></script>
+    <script src="content/js/responsiveMenu.js"></script>
+    <script src="pushNotificationMain.js"></script>
+    <!--<script>
+      if ('serviceWorker' in navigator && 'PushManager' in window) {
+          console.log('Service Worker and Push is supported');  
+          
+          navigator.serviceWorker.register('service-worker.js').then(function(swReg) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', swReg);
+              swRegistration = swReg;
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          }).catch(function(err) {
+            console.log(err)
+          });
+        
+      } else {
+        console.log('service worker is not supported');
+          console.warn('Push messaging is not supported');
+         pushButton.textContent = 'Push Not Supported';
+      }
+    </script>-->
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('a[href*=#]').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target ||
+                        $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body')
+                            .animate({
+                                scrollTop: targetOffset
+                            }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>

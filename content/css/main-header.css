@@ -1,0 +1,126 @@
+.main-header
+{
+    width: 100%;
+/*   background: url(../images/header-bg.png) repeat-x;    */*/
+/*    border-bottom: 2px solid #f9c31e;  */*/
+    object-position: top;
+    max-height: 0px;
+}
+
+.container
+{
+    max-width: 1200 px;
+    width: 100% ; 
+    font-family:Tahoma; 
+}
+
+#name
+{ 
+    font-size: larger;
+/*    padding-top: 10px; */
+/*    padding-left: 20px;*/
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px)
+.menu {
+    margin-bottom: 0;
+}
+.menu {
+    float: left;
+    margin-bottom: 0px;  
+}
+
+#list li a{
+	color: #dff0d8;
+	}
+#list li a:hover {
+	color:#337ab7;
+}
+
+
+/*
+ Link style
+ -------------------------*/
+a {
+	color: #4d87c7;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	outline: none;
+	text-decoration: none;
+}
+a:active {
+	outline: none;
+}
+:focus {
+	outline: none;
+}
+
+/*-------------------------*/
+
+
+p {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+
+.icons li {
+	display: inline-block;
+	padding: 2px 12px 0 0;
+    color: cornsilk
+}
+
+.icons {
+	text-align: center;
+}
+
+/* Style-one
+ ===================*/
+.menu .style-one .theme-overview {
+	float: right;
+	width: 400px;
+	height: 390px;
+	margin-right: 80px;
+	margin-top: 74px;
+}
+.menu .style-one .theme-overview ul li {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.nav-menu {
+	float: left;
+	width: 89%;
+}
+
+
+
+.fa.fa-envelope{color:#fff;}
+.fa.fa-envelope:hover{color:#4d87c7;}
+
+.fa.fa-github{color:#fff;}
+.fa.fa-github:hover{color:#4d87c7;}
+
+.fa.fa-linkedin{color:#fff;}
+.fa.fa-linkedin:hover{color:#4d87c7;}
+
+/*copyright*/
+
+.copyright > span {
+	color: #798390;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	margin-left: 23px;
+}
+.copyright > span>a{
+	color: #798390;
+	}
+.copyright > span>a:hover {
+	color:#f9c31e;
+}
